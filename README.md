@@ -61,7 +61,8 @@ pnpm install
 Inicializar base de datos
 
 ```bash
-./db/pocketbase serve
+cd docker
+docker compose up pocketbase
 ```
 
 En una nueva terminal, iniciar aplicación
