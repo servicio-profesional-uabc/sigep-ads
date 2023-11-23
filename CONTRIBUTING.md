@@ -24,7 +24,7 @@ Para configurar y compilar todos los paquetes, siga estos pasos:
 
 ```bash
 cd docker
-docker compose up -d pocketbase
+docker compose up -d db
 ```
 
 ```bash

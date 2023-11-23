@@ -1,8 +1,7 @@
 version: '3'
 
 services:
-  pocketbase:
-    container_name: pocketbase
+  db:
     image: pocketbase
     restart: unless-stopped
     build:
@@ -18,12 +17,11 @@ services:
       timeout: 5s
       retries: 5
 
-  app:
-    container_name: sveltekit-app
-    image: sveltekit-app
+  web:
+    image: sveltekit
     build:
       context: ..
-      dockerfile: ./docker/sveltekit-app/Dockerfile
+      dockerfile: ./docker/sveltekit/Dockerfile
     environment:
       - NODE_ENV=production
     depends_on:

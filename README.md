@@ -67,7 +67,7 @@ Inicializar base de datos
 
 ```bash
 cd docker
-docker compose up pocketbase
+docker compose up db
 ```
 
 En una nueva terminal, iniciar aplicación
