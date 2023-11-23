@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  db:
+  pocketbase:
     container_name: pocketbase
     image: pocketbase
     restart: unless-stopped
@@ -11,7 +11,7 @@ services:
     ports:
       - '8090:8090'
     volumes:
-      - ../db/pb_data:/pb/pb_data
+      - ../db:/pb/pb_data
     healthcheck: #optional (recommended) since v0.10.0
       test: wget --no-verbose --tries=1 --spider http://localhost:8090/api/health || exit 1
       interval: 5s
@@ -27,6 +27,6 @@ services:
     environment:
       - NODE_ENV=production
     depends_on:
-      - db
+      - pocketbase
     ports:
       - '3000:3000'

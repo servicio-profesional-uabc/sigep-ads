@@ -1,38 +1,89 @@
-# create-svelte
+<div align="center">
+<img src="https://comunicacioninstitucional.uabc.mx/sites/default/files/inline-images/escudo-actualizado-2022.png" alt="UABC" width="200"/>
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+ <h1>Sistema de Gestión de Información Psicopedagógica</h1>
+</div>
 
-## Creating a project
+Servicio Social Profesional
 
-If you're seeing this, you've probably already done this step. Congrats!
+Esta pagina web fue creada con SvelteKit. Creedenciales para probar aplicación:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- Usuario: test
+- Contraseña: 12345678
 
-# create a new project in my-apdop
-npm create svelte@latest my-app
-```
+[GitHub Repo](https://github.com/servicio-profesional-uabc/sigep-ads)
 
-## Developing
+## Correr utilizando Docker (recomendado)
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+La mejor forma de correr la aplicación es utilizando docker, ya que todo se mantiene dentro de un contenedor y no se cambia la información del sistema operativo host. [Documentación de Docker.com](https://docs.docker.com/get-started/)
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
+### Inicializar aplicación
 
 ```bash
-npm run build
+cd docker
+docker compose up -d
 ```
 
-You can preview the production build with `npm run preview`.
+La pagina web se encontrara en [localhost:3000](http://localhost:3000)
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+### Detener
+
+```bash
+docker compose down
+```
+
+### Eliminar archivos
+
+```bash
+docker compose down -v --rmi all --remove-orphans
+```
+
+## Correr localmente
+
+Para poder poder correrla de manera nativa, se necesita tener instalado Node.js y pnpm. (Probada en Linux y WSL2!!!)
+
+### Instalar dependencias
+
+En caso de no tener instalado Node.js, se puede instalar desde [aqui](https://nodejs.org/en/download/)
+
+Instalar pnpm
+
+```bash
+npm install -g pnpm
+```
+
+Instalar las dependencias del proyecto
+
+```bash
+pnpm install
+```
+
+Inicializar base de datos
+
+```bash
+./db/pocketbase serve
+```
+
+En una nueva terminal, iniciar aplicación
+
+```bash
+pnpm preview
+```
+
+## Contenedor de desarrollo
+
+Este repositorio incluye un contenedor de desarrollo de Visual Studio Code Dev Containers/GitHub Codespaces.
+
+- Para [Contenedores de desarrollo](https://aka.ms/vscode-remote/download/containers), utilice el comando **Contenedores de desarrollo: clonar repositorio en volumen de contenedor...** que crea un volumen Docker para mejorar la E/S del disco en macOS y Windows.
+
+  - Si ya tiene VS Code y Docker instalados, también puede hacer clic [aquí](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode) para comenzar. Esto hará que VS Code instale automáticamente la extensión Dev Containers si es necesario, clone el código fuente en un volumen de contenedor y active un contenedor de desarrollo para su uso.
+
+- Para Codespaces, instale la extensión [GitHub Codespaces](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces) en VS Code y use el comando **Codespaces: Crear nuevo Codespace**.
+
+Revisar [CONTRIBUTING.md](CONTRIBUTING.md) para más información.
+
+## Licencia
+
+Copyright (c) 2023 servicio-profesional-uabc. Todos los derechos reservados.
+
+Licensiado bajo la licencia [MIT](LICENSE).
