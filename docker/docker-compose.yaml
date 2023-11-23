@@ -25,6 +25,6 @@ services:
     environment:
       - NODE_ENV=production
     depends_on:
-      - pocketbase
+      - db
     ports:
       - '3000:3000'
