@@ -7,7 +7,7 @@
 	// throw redirect(302, '/login');
 </script>
 
-<div class="container h-full mx-auto flex justify-center items-center my-10">
+<div class="container mx-auto flex justify-center items-center my-10">
 	<div class="space-y-6 text-center flex flex-col items-center">
 		<img class="w-40" src={Logo} alt="Logo de la UABC" />
 		<h2 class="h2 text-primary-500 font-bold">Universidad Autónoma de Baja California</h2>

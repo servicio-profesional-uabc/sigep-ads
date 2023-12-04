@@ -2,6 +2,7 @@
 	import { currentUser, pb } from './pocketbase';
 	import { error, redirect } from '@sveltejs/kit';
 	import { goto } from '$app/navigation';
+	import { onMount } from 'svelte';
 	let username: string;
 	let password: string;
 

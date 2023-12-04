@@ -5,15 +5,18 @@
 	import { browser } from '$app/environment';
 	import { currentUser } from '$lib/pocketbase';
 	import Record from '$lib/Record.svelte';
+	import { onMount } from 'svelte';
 
-	/*if (pb.authStore.isValid) {
-		if (browser) {
-			goto('/');
+	/*onMount(() => {
+		if (pb.authStore.isValid) {
+			if (browser) {
+				goto('/');
+			}
 		}
-	}*/
+	});*/
 </script>
 
-{#if !currentUser}
+{#if !$currentUser}
 	<p>Please sign in</p>
 {/if}
 <Record />

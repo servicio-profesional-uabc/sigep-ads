@@ -19,19 +19,21 @@
 
 	function signOut() {
 		pb.authStore.clear();
-		invalidateAll();
+		if (browser) {
+			goto('/');
+		}
 	}
 
 	let currentTile = 0;
 </script>
 
 <!-- App Shell -->
-<AppShell slotSidebarLeft="bg-primary-500 w-44 rounded max-h-full">
+<AppShell slotSidebarLeft="bg-primary-500 w-44 rounded">
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<div class="container h-full mx-auto flex justify-start items-center w-f">
+				<div class="container mx-auto flex justify-start items-center w-f">
 					<img class="w-20 mx-5" src={Logo} alt="Logo de la UABC" />
 					<div class="space-y-0 text-center flex flex-col items-start">
 						<h2 class="h3 text-primary-500 font-bold">Universidad Autónoma de Baja California</h2>
@@ -42,7 +44,7 @@
 					</div>
 				</div>
 			</svelte:fragment>
-			<div class="container h-full mx-auto flex justify-end items-center">
+			<div class="container mx-auto flex justify-end items-center">
 				<div class="space-y-0 text-center flex flex-col items-end">
 					<h2 class="text-2xl text-tertiary-900 font-semibold">USUARIO</h2>
 					<h3 class="text-lg text-tertiary-900">01234567 - {$currentUser?.username}</h3>
