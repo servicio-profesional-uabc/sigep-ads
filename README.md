@@ -55,7 +55,7 @@ npm install -g pnpm
 Instalar las dependencias del proyecto
 
 ```bash
-pnpm install --prod --frozen-lockfile
+pnpm install --frozen-lockfile
 ```
 
 Construir aplicación
@@ -90,6 +90,6 @@ Revisar [CONTRIBUTING.md](CONTRIBUTING.md) para más información.
 
 ## Licencia
 
-Copyright (c) 2023 servicio-profesional-uabc. Todos los derechos reservados.
+[MIT](LICENSE)
 
-Licensiado bajo la licencia [MIT](LICENSE).
+Copyright (c) 2023 Universidad Autónoma de Baja California and [contributors](https://github.com/servicio-profesional-uabc/sigep-ads/graphs/contributors).
