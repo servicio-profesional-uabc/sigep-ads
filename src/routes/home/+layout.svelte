@@ -8,8 +8,6 @@
 	import { currentUser, pb } from '$lib/pocketbase';
 	import { goto, invalidateAll } from '$app/navigation';
 	import { browser } from '$app/environment';
-	import '@fortawesome/fontawesome-free/css/all.min.css';
-	import '@fortawesome/fontawesome-free/js/all.min.js';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
 	// if user is not logged in, redirect to login Page
@@ -56,10 +54,9 @@
 			<svelte:fragment slot="trail">
 				<button
 					type="button"
-					class="btn-icon btn-icon-lg fa-solid fa-arrow-right-from-bracket"
+					class="btn-icon-lg fa-solid fa-arrow-right-from-bracket"
 					on:click={signOut}
 				>
-					(icon)
 				</button>
 			</svelte:fragment>
 		</AppBar>
