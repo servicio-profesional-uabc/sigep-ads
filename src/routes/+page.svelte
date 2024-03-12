@@ -1,6 +1,5 @@
 <script lang="ts">
-	import Home from '$lib/Home.svelte';
-	import Login from '$lib/Login.svelte';
+	import Login from '$lib/components/Login.svelte';
 	import Logo from '$lib/assets/uabc-logo.png';
 	import { redirect } from '@sveltejs/kit';
 

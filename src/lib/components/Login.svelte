@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-	import { currentUser, pb } from './pocketbase';
+	import { currentUser, pb } from '../utils/pocketbase';
 	import { error, redirect } from '@sveltejs/kit';
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
