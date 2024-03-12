@@ -1,9 +1,0 @@
-<script lang="ts">
-	import HeaderPaciente from '$lib/components/HeaderPaciente.svelte';
-</script>
-
-<HeaderPaciente />
-
-<div class="block">
-	<h1>Testing</h1>
-</div>
