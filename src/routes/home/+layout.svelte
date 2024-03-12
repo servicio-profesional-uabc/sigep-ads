@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { AppShell, AppBar, AppRail, AppRailTile, AppRailAnchor } from '@skeletonlabs/skeleton';
-	import Navigation from '$lib/Navigation.svelte';
+	import Navigation from '$lib/components/Navigation.svelte';
 	import Logo from '$lib/assets/uabc-logo.png';
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
-	import { currentUser, pb } from '$lib/pocketbase';
+	import { currentUser, pb } from '$lib/utils/pocketbase';
 	import { goto, invalidateAll } from '$app/navigation';
 	import { browser } from '$app/environment';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });

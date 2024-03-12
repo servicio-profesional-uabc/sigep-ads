@@ -1,5 +1,5 @@
 <script lang="ts">
-	import FichaSm from '$lib/FichaSm.svelte';
+	import FichaSm from '$lib/components/FichaSm.svelte';
 </script>
 
 <FichaSm />
