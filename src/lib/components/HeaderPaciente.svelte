@@ -1,6 +1,7 @@
 <script lang="ts">
 	import GreenBtn from './GreenBtn.svelte';
 	// TODO: Añadir estructura de para la ficha
+	export let id_paciente: string = '09999999';
 </script>
 
 <div class="card card-hover p-4 container mx-auto justify-start w-full flex flex-row">
@@ -15,7 +16,7 @@
 		</div>
 		<div class="flex items-center">
 			<h2 class="text-lg font-semibold">No. Empleado / Matricula:</h2>
-			<h3 class="mx-2 text-base text-gray-500">01234567</h3>
+			<h3 class="mx-2 text-base text-gray-500">{id_paciente}</h3>
 		</div>
 		<div class="flex items-center">
 			<h2 class="text-lg font-semibold">Últ. problemática:</h2>
