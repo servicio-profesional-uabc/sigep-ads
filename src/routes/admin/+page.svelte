@@ -13,14 +13,14 @@
 		<h3 class="text-2xl text-secondary-500">
 			SIGEP - Sistema de Información de Gestión Psicopedagógica
 		</h3>
+		<div class="flex items-center">
+			<a href="/" class="absolute right-96 -left-32">
+				<button type="button" class="btn-icon-xl fa-solid fa-arrow-left"></button>
+			</a>
+			<h4 class="text-2xl underline text-tertiary-500">Usuario Administrador</h4>
+		</div>
 		<div>
 			<Login />
-			<div class="my-5">
-				<a href="/admin" class="btn bg-tertiary-500 text-white">Usuario administrador</a>
-			</div>
 		</div>
-		<footer class="">
-			<p class="text-gray-500">Consultar al administrador en caso de no estar registrado</p>
-		</footer>
 	</div>
 </div>
