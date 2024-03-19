@@ -14,7 +14,7 @@
 <div>
 	<div>
 		<a href="/admin/home" class="">
-			<button type="button" class="btn-icon-xl fa-solid fa-arrow-left" />
+			<button type="button" class="btn-icon-xl fa-solid fa-arrow-left h-0" />
 		</a>
 	</div>
 
