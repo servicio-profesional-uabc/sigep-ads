@@ -11,11 +11,11 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
 	// if user is not logged in, redirect to login Page
-	if (!$currentUser) {
+	/* if (!$currentUser) {
 		if (browser) {
 			goto('/');
 		}
-	}
+	}*/
 </script>
 
 <!-- App Shell -->

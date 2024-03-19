@@ -89,4 +89,7 @@
 			</tbody>
 		</table>
 	</div>
+	<div class="items-center flex flex-col">
+		<button type="submit" class="btn bg-primary-500 text-white">Guardar</button>
+	</div>
 </div>

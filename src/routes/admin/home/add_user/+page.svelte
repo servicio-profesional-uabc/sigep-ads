@@ -107,6 +107,9 @@
 				/>
 			</label>
 		</div>
+		<div>
+			<button type="submit" class="btn bg-primary-500 text-white relative left-10">Guardar</button>
+		</div>
 	</div>
 
 	<!--
