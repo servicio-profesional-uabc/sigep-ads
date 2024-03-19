@@ -14,10 +14,12 @@
 			SIGEP - Sistema de Información de Gestión Psicopedagógica
 		</h3>
 		<div class="flex items-center">
-			<a href="/" class="absolute right-96 -left-32">
+			<a href="/" class="relative right-40">
 				<button type="button" class="btn-icon-xl fa-solid fa-arrow-left"></button>
 			</a>
-			<h4 class="text-2xl underline text-tertiary-500">Usuario Administrador</h4>
+			<h4 class="relative right-[32px] text-2xl underline text-tertiary-500">
+				Usuario Administrador
+			</h4>
 		</div>
 		<div>
 			<Login />
